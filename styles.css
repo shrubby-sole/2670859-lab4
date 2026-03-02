@@ -8,37 +8,56 @@ body {
 }
 
 header {
-    background-color: #d37014;
+    background-color: #c44c15;
     color: white;
     padding: 1rem;
     text-align: left;
     
 }
 
-/* Search Section */
+/* Search Container */
 .search-container {
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
 }
 
+/* Search Input */
 #country-input {
-    padding: 10px;
-    width: 250px;
+    padding: 12px 18px;
+    width: 280px;
     font-size: 16px;
+    border-color:#e74c3c ;
+    border-radius: 0;
+    outline: none;
+    transition: 0.3s ease;
 }
 
+/* Input focus effect */
+#country-input:focus {
+    border-color:#e74c3c;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Search Button */
 #search-btn {
-    padding: 10px 15px;
+    padding: 12px 20px;
     font-size: 16px;
-    cursor: pointer;
-    background-color: #f86c2b;
     border: none;
-    color: white;
-    border-radius: 4px;
+    border-radius: 0;
+    background-color: #e74c3c;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
+/* Hover effect */
 #search-btn:hover {
-    background-color: #c44c15;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 /* 1. Loading Spinner (REQUIRED ANIMATION) */
 .spinner {
@@ -58,7 +77,7 @@ header {
 
 /* 2. Country Card (VISIBLE STYLING REQUIRED) */
 .country-card {
-    background-color: white;
+    background-color: #ecf0f1;
     margin: 20px auto;
     padding: 20px;
     width: 80%;
