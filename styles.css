@@ -11,6 +11,8 @@ header {
     background-color: #d37014;
     color: white;
     padding: 1rem;
+    text-align: left;
+    
 }
 
 /* Search Section */
@@ -63,7 +65,7 @@ header {
     max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align:center;
 }
 
 /* 3. Border Grid (MUST USE GRID OR FLEXBOX) */
