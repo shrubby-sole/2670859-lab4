@@ -1,0 +1,95 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: #d37014;
+    color: white;
+    padding: 1rem;
+}
+
+/* Search Section */
+.search-container {
+    margin: 20px 0;
+}
+
+#country-input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+#search-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f86c2b;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+#search-btn:hover {
+    background-color: #c44c15;
+}
+
+/* 1. Loading Spinner (REQUIRED ANIMATION) */
+.spinner {
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 2. Country Card (VISIBLE STYLING REQUIRED) */
+.country-card {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* 3. Border Grid (MUST USE GRID OR FLEXBOX) */
+.border-grid {
+    display: grid; /* Required */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.border-grid div {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* 4. Error Styling (DISTINCT) */
+.error {
+    color: #e74c3c; /* Error color */
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* 5. Hidden State */
+.hidden {
+    display: none;
+}
